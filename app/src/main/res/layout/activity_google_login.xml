@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient1"
+    tools:context=".GoogleLogInActivity">
+
+    <ImageView
+        android:id="@+id/Pic"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        tools:srcCompat="@tools:sample/avatars" />
+
+
+    <LinearLayout
+        android:id="@+id/LL1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/Pic">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="USER:"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:paddingLeft="40dp" />
+
+        <TextView
+            android:id="@+id/Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:paddingLeft="10dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/LL2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/LL1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EMAIL:"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:paddingLeft="40dp" />
+        <TextView
+            android:id="@+id/Email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textColor="@color/black"
+            android:paddingLeft="10dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/Frame_layout"
+        android:layout_below="@+id/LL2"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="54dp"
+        android:background="@drawable/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/signout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="Sign Out"
+            android:textSize="15sp" />
+
+    </FrameLayout>
+
+
+
+</RelativeLayout>

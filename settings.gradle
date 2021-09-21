@@ -1,0 +1,2 @@
+rootProject.name = "Syncd"
+include ':app'
